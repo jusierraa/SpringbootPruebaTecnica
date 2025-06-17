@@ -18,14 +18,14 @@ Este proyecto implementa una API REST utilizando Java 21 y Spring Boot 3 y permi
 La aplicación se organiza en paquetes separados:
 
 com.example.demo
-├── controller # Controladores REST
-├── dto # Objetos de transferencia (Login, Usuario)
-├── model # Entidades JPA
-├── repository # Interfaces JPA
-├── service # Lógica de negocio
-├── client # Feign Client para DummyJSON
+- controller # Controladores REST
+- dto # Objetos de transferencia (Login, Usuario)
+- model # Entidades JPA
+- repository # Interfaces JPA
+- service # Lógica de negocio
+- client # Feign Client para DummyJSON
 
-## 📌 Funcionalidad principal
+## Funcionalidad principal
 
 - `POST /api/auth/login`: autentica al usuario contra DummyJSON.
 - Recupera datos del usuario autenticado (`/auth/me`).
