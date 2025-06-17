@@ -1,4 +1,4 @@
-package tu.paquete.model;
+package com.example.demo;;
 
 import jakarta.persistence.*;
 import lombok.*;

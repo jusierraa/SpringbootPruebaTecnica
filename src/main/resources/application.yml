@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/dummydb  # Cambia por el nombre de tu BD
-    username: tu_usuario
-    password: tu_contraseña
+    url: jdbc:postgresql://localhost:5432/dummydb
+    username: postgres
+    password: 
   jpa:
     hibernate:
       ddl-auto: update
