@@ -41,9 +41,9 @@ com.example.demo
 ### PostgreSQL con Docker
 Si **no se tiene PostgreSQL instalado**, se puede usar Docker
 
-##La tabla Login_log se crea automaticamente
+## La tabla Login_log se crea automaticamente
 
-##Autenticación
+## Autenticación
 curl -X POST http://localhost:8080/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"username":"emilys","password":"emilyspass"}'
@@ -52,8 +52,16 @@ Si es exitoso:
 Recibirás los datos del usuario autenticado.
 Se insertará un registro en la tabla login_log.
 
-##Pruebas
+## Pruebas
 incluye una prueba unitaria del flujo de login usando mocks:
 AuthServiceTest.java: simula autenticación y guarda el log.
 Usa JUnit + Spring Boot Test + Mockito.
 
+Asegúrate de tener Java 21 y Maven.
+
+Levanta PostgreSQL con Docker.
+
+Ejecuta el proyecto:
+
+./mvnw spring-boot:run
+Prueba el endpoint con el curl provisto.
